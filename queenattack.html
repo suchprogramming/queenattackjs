@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Queen Attack detector</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Queen Attack detector</h1>
+
+      <form id="queen-attack">
+        <div class="form-group">
+          <label for="coordinate1">Enter a chess space that is the piece in question:</label>
+          <input id="coordinate1" type="text">
+        </div>
+
+        <label for="coordinate2">Enter a chess space that is the queen:</label>
+        <input id="coordinate2" type="text">
+        <br>
+        <button type="submit" class="btn btn-info">Find out!</button>
+      </form>
+
+      <div id="true">
+        <p> The queen can attack this position.</p>
+      </div>
+
+      <div id="false">
+        <p> The queen cannot attack this position.</p>
+    </div>
+  </body>
+</html>
